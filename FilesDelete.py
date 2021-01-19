@@ -18,3 +18,4 @@ for root, dirs, files in os.walk(path) :
         fileTime = round(os.stat(path).st_ctime)
         if fileTime >= limit :
             os.remove(path)
+print("\033[1;31m Files deleted")
